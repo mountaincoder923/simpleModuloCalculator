@@ -11,7 +11,7 @@ let lastQuotient = null;
 function addToHistory(dividend, divisor, quotient, remainder) {
     const li = document.createElement('li');
     li.textContent =
-        `${dividend} ÷ ${divisor} → q=${quotient}, r=${remainder}`;
+        `${dividend} ÷ ${divisor} → Quotient: ${quotient}, Remainder: ${remainder}`;
     historyList.appendChild(li);
 }
 
