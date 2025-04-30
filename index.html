@@ -38,6 +38,18 @@
 
         h1 { margin: 0 0 1.25rem; font-size: 1.5rem; }
 
+        .info-box {
+            background: hsl(210 36% 96%);
+            border: 1px solid hsl(210 30% 88%);
+            border-radius: 0.75rem;
+            padding: 1rem 1.25rem;
+            font-size: 0.92rem;
+            line-height: 1.4;
+            color: hsl(210 20% 30%);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px hsl(0 0% 0% / 0.05);
+        }
+
         label {
             display: flex;
             flex-direction: column;
@@ -116,6 +128,11 @@
 <body>
 <div class="card">
     <h1>Really Simple Modulo Calculator</h1>
+    <div class="info-box">
+        Input your values. Hit <strong>Calculate</strong> to perform the modulo.
+        The <strong>Again</strong> button loads the <em>quotient</em> into the dividend while keeping the original divisor—
+        perfect for chaining modulo arithmetic.
+    </div>
 
     <label>
         Dividend
